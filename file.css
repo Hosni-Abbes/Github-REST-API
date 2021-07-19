@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: #e91e63;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 500px;
+  margin: auto;
+  min-width: 300px;
+}
+::placeholder {
+  color: #880e4f;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.h1 {
+  color: #fff;
+  border-bottom: 2px solid;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 6px;
+}
+.form {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form input {
+  background: #ec407a;
+  color: #fff;
+  width: 75%;
+  padding: 10px;
+  border: 1px solid #880e4f;
+  border-radius: 6px;
+  outline: none;
+}
+.form button {
+  padding: 10px;
+  border: 1px solid #880e4f;
+  border-radius: 6px;
+  background: #d81b60;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+.result {
+  background: #c2185b;
+  border-radius: 6px;
+  color: #fff;
+  border: 1px solid #880e4f;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+.repo_title {
+  color: #e91e63;
+  width: 54%;
+  display: flex;
+  word-break: break-all;
+}
+.result .output {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+  background: #fff;
+  padding: 10px;
+}
+.icon_ss {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+}
+.the_icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 575px) {
+  .form input {
+    width: 100%;
+  }
+  .form input,
+  .form button {
+    margin-bottom: 10px;
+  }
+  .form {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 350px) {
+  .icon_ss {
+    width: 50%;
+  }
+}
